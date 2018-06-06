@@ -1,0 +1,25 @@
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Ime</th>
+      <th>Broj kreveta</th>
+      <th>TV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let room of data">
+      <td>{{room.roomname}}</td>
+      <td>{{room.beds}}</td>
+      <td>
+        <span *ngIf="room.tv == '1'">
+        TV: Ima
+         </span>
+      <span *ngIf="room.tv != '1'">
+          TV: Nema
+      </span>
+    </td>
+    </tr>
+  </tbody>
+</table>

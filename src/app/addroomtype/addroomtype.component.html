@@ -1,0 +1,7 @@
+<form role="form" [formGroup]="addRoomTypeForm">
+  <div class="form-group">
+    <label for="name">Room type name:</label>
+    <input type="text" class="form-control" formControlName='name'>
+  </div>
+  <button (click)="addRoomType()" class="btn btn-default">Add room</button>
+</form>
